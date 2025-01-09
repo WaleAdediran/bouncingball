@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background-color:rgb(199, 104, 104);
+    overflow: hidden;
+}
+
+
+
+/* Ball and its animation code*/
+#bouncing-ball {
+    width: 5vw;
+    height: 5vw;
+    background: linear-gradient(blue, green);
+    border-radius: 50%;
+    position: absolute;
+    animation: bounce 2s infinite;
+    animation-direction: alternate;
+    left: calc(50% - 50px);
+    
+}
+
+@keyframes bounce {
+    from {
+      top: 0;
+    }
+    to {
+      top: 89.5vh;
+    }
+  }
